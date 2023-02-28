@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+:root{
+    --lg-font: 'Kaisei Tokumin',serif;
+    --sm-font: 'Poppins', sans-serif;
+
+}
+
+.btn-test {
+    transition: background 0.5s !important;
+}
+
+.btn-test :hover {
+    background: #563434 !important;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-4{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-4 img {
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5px;
+}
+.col-3 img{
+    width: 100%;
+}
+.col-3:hover{
+    transform: translateY(-5px);
+}
+.title-1{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title-1::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin: 80px;
+    margin: 0%;
+    padding: 30px;
+}
+.offer-img{
+    padding: 50px;
+    
+}
+small{
+    color: #555;
+}
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-4{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0 ,0, 0, 0.1);
+    cursor: pointer;
+    transform: transition 0.5;
+
+}
+.testimonial .col-4 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial  .col-4:hover{
+    transform: translateY(-10px);
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer-col-1 .footer-col-2 .footer-col-3 .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 25px;
+}
+
+
+
+@media only  screen and (max-width:800px){
+    .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .col-3 .col-4 {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .col-6{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #8a8a8a;
+    }
+    
+}
