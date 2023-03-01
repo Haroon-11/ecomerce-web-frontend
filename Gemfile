@@ -76,3 +76,5 @@ gem "font-awesome-rails"
 
 
 gem "sass-rails", "~> 6.0"
+
+gem "devise", "~> 4.9"

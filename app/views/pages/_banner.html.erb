@@ -1,0 +1,30 @@
+<div class="header" style="background: radial-gradient(#fff, #ffd6d6)">
+  <div class="container">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+    <div class="row">
+      <div class="col-6 my-5">
+        <h1>Give your Outfit <br />A New Style!</h1>
+        <p>
+          Success is not alaways about greateness. It's About Consistency.
+          Consistant <br />
+          work gains success. Greateness will come.
+        </p>
+        <%= link_to "Explore More" ,pages_product_path, class:"btn btn-danger rounded-9
+        btn-test" %>
+      </div>
+      <div class="col-6">
+        <img
+          src="<%= asset_path('image1.png') %>"
+          alt=""
+          height="auto"
+          width="600px"
+        />
+      </div>
+    </div>
+  </div>
+</div>
